@@ -1,0 +1,5 @@
+Tested in Ubuntu 14.04 and Mac OS 10.8
+
+1. Install OpenCV to '/usr/local/include' and '/usr/local/lib'.
+2. Type 'make' under command line.
+3. Type './iglance' run the program
