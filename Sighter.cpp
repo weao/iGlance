@@ -67,7 +67,7 @@ void Sighter::procSight(cv::Mat &frame, cv::Mat &lfeat, cv::Mat &rfeat) {
 
     //Detect face
     cv::vector<cv::Rect> faces;
-    faceDetector.detectMultiScale(gray, faces, 1.1, 40, CV_HAAR_DO_CANNY_PRUNING|CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(gray.cols/4,gray.rows/4));
+    faceDetector.detectMultiScale(gray, faces, 1.1, 20, CV_HAAR_DO_CANNY_PRUNING|CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(gray.cols/4,gray.rows/4));
 
     if(faces.empty()) {
         return;
